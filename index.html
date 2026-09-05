@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Innavisio — Direct Revenue Intelligence for Independent Hotels</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
 <meta name="description" content="Innavisio identifies where independent hotels lose direct demand to OTAs, competitors and the digital booking journey — then quantifies the opportunity to recover it." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,9 +41,11 @@
   /* header */
   header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .brand{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.02em;color:var(--ink)}
-  .brand span{color:var(--brand)}
-  .brand small{display:block;font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+  .brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.02em;color:var(--ink)}
+  .brand-mark{height:38px;width:auto;display:block}
+  .brand-wm{display:flex;flex-direction:column;line-height:1.05}
+  .brand .hi{color:var(--brand)}
+  .brand small{font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:2px}
   .nav-links{display:flex;gap:30px;align-items:center}
   .nav-links a{font-size:14.5px;font-weight:500;color:var(--ink-soft)}
   .nav-links a:hover{color:var(--brand)}
@@ -154,7 +158,7 @@
 <!-- ============ HEADER ============ -->
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top">INNAV<span>I</span>SIO<small>Direct Revenue Intelligence</small></a>
+    <a class="brand" href="#top"><img src="mark.png" alt="Innavisio" class="brand-mark" /><span class="brand-wm"><span>INNAV<span class="hi">I</span>SIO</span><small>Direct Revenue Intelligence</small></span></a>
     <nav class="nav-links">
       <a href="#problem">The problem</a>
       <a href="#analyze">What we analyze</a>
