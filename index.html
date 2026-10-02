@@ -150,6 +150,17 @@
   .foot-col a{color:#cfe0dc;font-size:14px;display:block;margin-top:6px}
   .foot-col a:hover{color:#fff}
   .foot-h{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#6f938c}
+  /* TruBar */
+  .trubar{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  @media(max-width:820px){.trubar{grid-template-columns:1fr;gap:28px}}
+  .tb-logo{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:26px;letter-spacing:-.02em}
+  .tb-logo .t{color:#071A2D}.tb-logo .b{color:#00A99D}
+  .tb-card{background:#071A2D;color:#e6edf3;border-radius:18px;padding:26px;box-shadow:var(--shadow)}
+  .tb-card .p-kick{color:#5fd3c8}
+  .tb-row{display:flex;justify-content:space-between;gap:14px;font-size:13.5px;padding:9px 0;border-top:1px solid #1c3550}
+  .tb-row b{color:#ff8a80;font-weight:600;font-variant-numeric:tabular-nums}
+  .btn-tb{background:#00A99D;color:#071A2D}
+  .btn-tb:hover{background:#00958b;transform:translateY(-1px)}
   .foot-legal{font-size:12px;color:#6f938c;margin-top:22px;max-width:80ch;line-height:1.7}
 </style>
 </head>
@@ -165,6 +176,7 @@
       <a href="#how">How it works</a>
       <a href="#case">Case study</a>
       <a href="#product">Pricing</a>
+      <a href="#trubar">TruBar for bars</a>
     </nav>
     <a class="btn btn-primary" href="#snapshot">Free Revenue Snapshot</a>
   </div>
@@ -336,12 +348,44 @@
   </div>
 </section>
 
+<!-- ============ TRUBAR ============ -->
+<section id="trubar" class="band">
+  <div class="wrap trubar">
+    <div>
+      <div class="eyebrow">Also from Innavisio · For bars &amp; restaurants</div>
+      <div style="margin:14px 0 6px"><span class="tb-logo" aria-label="TruBar"><svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><path d="M0 0H42V18H18V42H0Z" fill="#071A2D"/><path d="M58 0H100V42H82V18H58Z" fill="#00A99D"/><path d="M0 58H18V82H42V100H0Z" fill="#071A2D"/><path d="M100 58V100H58V82H82V58Z" fill="#071A2D"/></svg><span><span class="t">Tru</span><span class="b">Bar</span></span></span></div>
+      <h2 style="font-size:clamp(24px,3vw,34px);margin:6px 0 14px">Know exactly where every bottle goes.</h2>
+      <p style="font-size:17px;color:var(--ink-soft);max-width:54ch">TruBar is bar operations software and inventory auditing, built in The Bahamas. It counts your stock, reads your supplier invoices and matches them against every drink sold, so owners see what's going missing in dollars, product by product.</p>
+      <ul class="feature-list">
+        <li>Scan-and-weigh stock counts</li>
+        <li>Variance in dollars</li>
+        <li>POS that works offline</li>
+        <li>Automatic invoice reading</li>
+        <li>Shift cash &amp; card checks</li>
+        <li>Managed counting by our team</li>
+      </ul>
+      <div class="hero-cta" style="margin-top:24px">
+        <a class="btn btn-tb" href="https://trubar.innavisio.com/#contact">Book a spot audit</a>
+        <a class="btn btn-ghost" href="https://trubar.innavisio.com/">Visit TruBar</a>
+      </div>
+    </div>
+    <div class="tb-card" aria-label="Example TruBar variance">
+      <div class="p-kick" style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase">Example week</div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin:10px 0 14px"><span style="font-size:14px">Unexplained loss</span><span style="font-family:var(--sans);font-weight:700;font-size:30px;color:#ff8a80">−$412.60</span></div>
+      <div class="tb-row"><span>Premium cognac</span><b>−$61.30</b></div>
+      <div class="tb-row"><span>House rum</span><b>−$46.50</b></div>
+      <div class="tb-row"><span>Draught lager</span><b>−$41.80</b></div>
+      <div style="margin-top:12px;font-size:11px;color:#7f94a8">Illustration only. Spot audits from $349 · software from $149/month.</div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CREDIBILITY ============ -->
 <section id="about">
   <div class="wrap" style="max-width:760px;text-align:center">
     <div class="eyebrow">Independent revenue intelligence</div>
     <h2 style="font-size:clamp(24px,3vw,32px);margin:12px 0 16px">Independent intelligence. Built for direct revenue.</h2>
-    <p style="font-size:17px;color:var(--ink-soft)">Innavisio is an independent revenue-intelligence firm focused on helping independent hotels understand how travelers discover, compare and ultimately choose where to book.</p>
+    <p style="font-size:17px;color:var(--ink-soft)">Innavisio is an independent revenue-intelligence firm focused on helping independent hotels understand how travelers discover, compare and ultimately choose where to book, and, through <a href="https://trubar.innavisio.com/" style="color:var(--brand);font-weight:500">TruBar</a>, helping bars see where their stock and money go.</p>
     <p style="margin-top:22px;font-weight:600;color:var(--ink)">Innavisio LLC</p>
     <p><a href="mailto:info@innavisio.com" style="color:var(--brand);font-weight:500">info@innavisio.com</a></p>
   </div>
@@ -361,6 +405,13 @@
         <a href="#analyze">What we analyze</a>
         <a href="#case">Case study</a>
         <a href="#snapshot">Free snapshot</a>
+      </div>
+      <div class="foot-col">
+        <div class="foot-h">For bars</div>
+        <a href="https://trubar.innavisio.com/">TruBar</a>
+        <a href="https://trubar.innavisio.com/#contact">Book a bar audit</a>
+        <a href="https://trubar.innavisio.com/privacy">TruBar privacy</a>
+        <a href="https://trubar.innavisio.com/terms">TruBar terms</a>
       </div>
     </div>
     <p class="foot-legal">
